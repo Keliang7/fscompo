@@ -1,6 +1,4 @@
-<script setup lang="ts">
-// import { Button } from "../dist/fscompo.es.js";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
@@ -26,7 +24,6 @@
 </template>
 
 <style scoped>
-@import url("../dist/fscompo.css");
 .logo {
   height: 6em;
   padding: 1.5em;

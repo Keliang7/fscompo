@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "./dist", // 输出目录
-    "declaration": true, // 生成类型声明文件
-    "declarationDir": "./dist/types", // 声明文件的输出目录
-    "emitDeclarationOnly": true, // 只生成类型声明文件（可选，打包工具会处理 JS 部分）
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
