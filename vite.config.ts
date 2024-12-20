@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
+      entryRoot: "src/components/index.ts",
       insertTypesEntry: true,
     }),
   ],
