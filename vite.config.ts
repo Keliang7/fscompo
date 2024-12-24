@@ -8,15 +8,17 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      entryRoot: "src/components/index.ts",
-      insertTypesEntry: true,
+      entryRoot: "src/components", // 类型文件的入口
+      outDir: "dist/es", // 输出目录
     }),
   ],
   build: {
+    outDir: "dist/es",
     lib: {
-      entry: resolve(__dirname, "src/components/index.ts"),
+      entry: resolve(__dirname, "./src/components/index.ts"),
       name: "Fscompo",
-      fileName: format => `fscompo.${format}.js`,
+      fileName: "index",
+      formats: ["es"],
     },
     rollupOptions: {
       external: ["vue"],
@@ -43,7 +45,7 @@ export default defineConfig({
     alias: [
       {
         find: /\@\//,
-        replacement: resolve(__dirname, "../src"),
+        replacement: resolve(__dirname, "src"),
       },
     ],
   },

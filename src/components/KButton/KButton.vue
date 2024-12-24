@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import "./fsTable.css";
+import "./KButton.css";
 import { computed } from "vue";
 import { Button as AButton } from "@arco-design/web-vue";
 
