@@ -1,6 +1,4 @@
-<script setup lang="tsx">
-import { Button } from "./test/fscompo.es";
-</script>
+<script setup lang="tsx"></script>
 
 <template>
   <div>
@@ -21,10 +19,6 @@ import { Button } from "./test/fscompo.es";
         alt="Vue logo" />
     </a>
   </div>
-  <Button
-    :primary="true"
-    label="123"></Button>
-  <div class="storybook-button">123</div>
 </template>
 
 <style scoped>
