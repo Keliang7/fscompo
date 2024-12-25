@@ -8,8 +8,8 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      entryRoot: "src/components", // 类型文件的入口
-      outDir: "dist/es", // 输出目录
+      tsconfigPath: "./tsconfig.app.json",
+      outDir: "dist/es/types", // 输出目录
     }),
   ],
   build: {
